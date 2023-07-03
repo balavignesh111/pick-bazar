@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root{
-  --clr-green: rgb(2,165,165);
+  --clr-green: rgb(0,159,127);
+  --clr-header-bg: rgb(250,250,250);
 }
 
 *{
@@ -31,15 +32,21 @@ body{
 }
 
 .header{
+  background: url(./image/makeup.webp);
+  height: 100vh;
+}
+
+.navbar{
+  position: fixed;
   width: 100%;
-  padding: 1.5rem;
-  background-color: white;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  background-color: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.header-left{
+.navbar-left{
   width: 23rem;
   display: flex;
   flex-direction: row;
@@ -47,7 +54,7 @@ body{
   gap: 2rem;
 }
 
-.header-right{
+.navbar-right{
   width: 32rem;
   display: flex;
   flex-direction: row;
@@ -55,7 +62,7 @@ body{
   gap: 1.5rem;
 }
 
-.header-right a{
+.navbar-right a{
   text-decoration: none;
   color: black;
 }
@@ -69,8 +76,8 @@ body{
   border-radius: 5px;
 }
 
-#header-menu{
-  appearance: none;
+#navbar-menu{
+  /* appearance: none; */
   color: var(--clr-green);
   font-size: 1rem;
   font-weight: 900;
@@ -81,3 +88,90 @@ body{
   outline: none;  
 }
 
+.navbar-right a:hover{
+  color: var(--clr-green);
+}
+
+/* item container */
+.selected-item{
+  font-size: 0.9rem;
+  font-weight: 900;
+  width: 5.5rem;
+  height: 6rem;
+  background-color: var(--clr-green);
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--clr-green);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.item-value{
+  width: 4.5rem;
+  height: 2rem;
+  background-color: white;
+  color: var(--clr-green);
+  border: 1px solid var(--clr-green);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.items{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* legend-container starts here!!! */
+.legend-container{
+  width: 100%;
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.legend-description{
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.legend-title{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.search-area{
+  display: flex;
+  justify-content: center;
+}
+
+#search-for-products{
+  width: 40rem;
+  height: 3.1rem;
+  padding-left: 1rem;
+  border: 1px solid white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-btn{
+  background-color: var(--clr-green);
+  color: white;
+  padding: 1rem 0.5rem;
+  border: 1px solid var(--clr-green);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
