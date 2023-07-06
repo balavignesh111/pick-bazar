@@ -175,3 +175,22 @@ body{
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+/* offer container */
+/* .offer-container{
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.offer{
+  width: 20rem;
+}
+
+.offer img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+} */
